@@ -129,17 +129,20 @@ table {
 	border-spacing: 0;
 }
 
+body {
+	background-color: white;
+}
+
 .header-container {
 	height: 100px;
-	border: 1px solid;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background-color:rgb(20,116,204);
-	background: -moz-radial-gradient(circle, rgba(20,116,204,1) 16%, rgba(30,43,181,1) 100%);
-	background: -webkit-radial-gradient(circle, rgba(20,116,204,1) 16%, rgba(30,43,181,1) 100%);
-	background: radial-gradient(circle, rgba(20,116,204,1) 16%, rgba(30,43,181,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1474cc",endColorstr="#1e2bb5",GradientType=1);
+	background-color: rgb(20, 116, 204);
+	background: -moz-radial-gradient(circle, rgba(20, 116, 204, 1) 16%, rgba(30, 43, 181, 1) 100%);
+	background: -webkit-radial-gradient(circle, rgba(20, 116, 204, 1) 16%, rgba(30, 43, 181, 1) 100%);
+	background: radial-gradient(circle, rgba(20, 116, 204, 1) 16%, rgba(30, 43, 181, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1474cc", endColorstr="#1e2bb5", GradientType=1);
 }
 
 .logo-icon {
@@ -156,7 +159,7 @@ table {
 	font-optical-sizing: auto;
 	font-weight: 500;
 	font-variation-settings:
-	  "slnt" 0;
+		"slnt" 0;
 	color: whitesmoke;
 }
 
@@ -172,9 +175,9 @@ table {
 }
 
 .nav-container>nav>a {
-	font-size: 16px;
+	font-size: 18px;
 	padding: 5px;
-	margin: 8px;
+	margin: 10px;
 	color: whitesmoke;
 	text-decoration: none;
 	border: 2px solid;
@@ -182,6 +185,173 @@ table {
 	font-family: "Cairo Play", sans-serif;
 	font-weight: 600;
 	font-variation-settings:
-	  "slnt" 0;
-	
+		"slnt" 0;
+}
+
+main>section {
+	height: 250px;
+	justify-content: space-evenly;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.text-main {
+	text-align: center;
+	color: whitesmoke;
+}
+
+.text-main>h1 {
+	font-size: 50px;
+	font-family: "Philosopher", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	color: black;
+}
+
+.text-main>h3 {
+	font-size: 30px;
+	font-family: "Damion", cursive;
+	font-weight: 200;
+	font-style: normal;
+	color: darkgrey;
+	margin-bottom: 10px;
+}
+
+.main-container {
+
+	height: 600px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+
+}
+
+.img-container {
+	width: 100%;
+	height: 550px;
+	display: flex;
+	flex-direction: column;
+	margin-right: 10px;
+}
+
+.img-testimoni {
+	width: 700px;
+	height: 400px;
+	align-self: center;
+	margin-left: 50px;
+	border: 2px;
+	border-radius: 10px;
+}
+
+.text-testimoni {
+	font-size: 20px;
+	align-self: center;
+	margin-top: 15px;
+	margin-left: 100px;
+	font-style: italic;
+	text-align: left;
+	color: darkgrey;
+}
+
+.container-img-testi-profile {
+	width: 700px;
+	height: 50px;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+}
+
+.testi-profile {
+	align-self: left;
+	width: 40px;
+	height: 40px;
+}
+
+.container-text-testi-profile {
+	align-self: center;
+	margin-left: 20px;
+}
+
+.container-text-testi-profile>h1 {
+	font-size: 18px;
+	color: black;
+	font-weight: 600;
+}
+
+.container-text-testi-profile>p {
+	font-size: 14px;
+	color: darkgrey;
+	font-weight: 200;
+}
+
+.main-aside-container {
+	margin-left: 10px;
+	height: 550px;
+	width: 100%;
+}
+
+.form-container {
+	border: 2px solid;
+	border-radius: 15px;
+	height: 550px;
+	width: 80%;
+	margin: auto;
+}
+
+.form-container > h1 {
+	font-size: 30px;
+	color: black;
+	font-weight: 600;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.form-container > p {
+	font-size: 18px;
+	color: black;
+	font-weight: 200;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.form-input-container {
+	margin-top: 50px;
+	margin-left: 30px;
+
+}
+
+.form-input-container > label{
+	font-size: 18px;
+}
+
+.input-label {
+	margin-top : 5px;
+	width: 680px;
+	height: 35px;
+}
+
+#option {
+	width: 680px;
+}
+
+.form-button {
+	width: 100%;
+	height: 50px;
+	align-content: center;
+	text-align: left;
+}
+
+.form-button > button{
+	font-size: 18px;
+	font-weight: 200;
+	height: 50px;
+	margin-left: 30px;
+	width: 680px;
 }
