@@ -1,0 +1,187 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.header-container {
+	height: 100px;
+	border: 1px solid;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color:rgb(20,116,204);
+	background: -moz-radial-gradient(circle, rgba(20,116,204,1) 16%, rgba(30,43,181,1) 100%);
+	background: -webkit-radial-gradient(circle, rgba(20,116,204,1) 16%, rgba(30,43,181,1) 100%);
+	background: radial-gradient(circle, rgba(20,116,204,1) 16%, rgba(30,43,181,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1474cc",endColorstr="#1e2bb5",GradientType=1);
+}
+
+.logo-icon {
+	margin-left: 1%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo-text {
+	font-size: 50px;
+	margin-left: 15px;
+	font-family: "Cairo Play", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-variation-settings:
+	  "slnt" 0;
+	color: whitesmoke;
+}
+
+.logo {
+	height: 80px;
+	width: 80px;
+	border: 2.5px solid;
+	border-radius: 100px;
+}
+
+.nav-container {
+	margin-right: 1%;
+}
+
+.nav-container>nav>a {
+	font-size: 16px;
+	padding: 5px;
+	margin: 8px;
+	color: whitesmoke;
+	text-decoration: none;
+	border: 2px solid;
+	border-radius: 5px;
+	font-family: "Cairo Play", sans-serif;
+	font-weight: 600;
+	font-variation-settings:
+	  "slnt" 0;
+	
+}
