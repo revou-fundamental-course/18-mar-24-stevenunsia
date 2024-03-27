@@ -145,6 +145,20 @@ body {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1474cc", endColorstr="#1e2bb5", GradientType=1);
 }
 
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+body.sticky-padding {
+	padding-top: 100px;
+}
+
+#navbar {
+	transition: top 0.3s;
+}
+
 .logo-icon {
 	margin-left: 1%;
 	display: flex;
@@ -158,8 +172,11 @@ body {
 	font-family: "Cairo Play", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 500;
-	font-variation-settings:
-		"slnt" 0;
+	font-variation-settings: "slnt" 0;
+}
+
+.logo-text>a {
+	text-decoration: none;
 	color: whitesmoke;
 }
 
@@ -186,6 +203,11 @@ body {
 	font-weight: 600;
 	font-variation-settings:
 		"slnt" 0;
+}
+
+.nav-container>nav>a:hover {
+	background-color: white;
+	color: black
 }
 
 main>section {
@@ -305,34 +327,34 @@ main>section {
 	margin: auto;
 }
 
-.form-container > h1 {
+.form-container>h1 {
 	font-size: 30px;
 	color: black;
 	font-weight: 600;
 	text-align: center;
-	margin-top: 10px;
+	margin-top: 55px;
 }
 
-.form-container > p {
-	font-size: 18px;
+.form-container>p {
+	font-size: 20px;
 	color: black;
 	font-weight: 200;
 	text-align: center;
 	margin-top: 10px;
+	font-style: italic;
 }
 
 .form-input-container {
 	margin-top: 50px;
 	margin-left: 30px;
-
 }
 
-.form-input-container > label{
+.form-input-container>label {
 	font-size: 18px;
 }
 
 .input-label {
-	margin-top : 5px;
+	margin-top: 5px;
 	width: 680px;
 	height: 35px;
 }
@@ -348,10 +370,54 @@ main>section {
 	text-align: left;
 }
 
-.form-button > button{
+.form-button>button {
 	font-size: 18px;
-	font-weight: 200;
+	font-weight: 600;
 	height: 50px;
 	margin-left: 30px;
 	width: 680px;
+}
+
+.footer-container {
+	text-align: center;
+	padding: 20px 0;
+	background-color: rgb(20, 116, 204);
+	background: -moz-radial-gradient(circle, rgba(20, 116, 204, 1) 16%, rgba(30, 43, 181, 1) 100%);
+	background: -webkit-radial-gradient(circle, rgba(20, 116, 204, 1) 16%, rgba(30, 43, 181, 1) 100%);
+	background: radial-gradient(circle, rgba(20, 116, 204, 1) 16%, rgba(30, 43, 181, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1474cc", endColorstr="#1e2bb5", GradientType=1)
+}
+
+.footer-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-logo {
+	margin-bottom: 20px;
+}
+
+.logo {
+	height: 50px;
+	width: auto;
+}
+
+.footer-links>a {
+	margin: 16px;
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.footer-links>span {
+	margin: 0 5px;
+}
+
+.footer-links>p {
+	margin-top: 10px;
+	font-size: 16px;
+	color: black
 }

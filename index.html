@@ -35,18 +35,20 @@
         rel="stylesheet">
 
 <body>
-    <header class="header-container">
+    <header class="header-container" id="navbar">
         <section class="logo-icon">
             <img src="assets/Foto/Logo.png" class="logo" alt="Logo-Perusahaan">
             <section class="logo-text">
-                <p>Travelia</p>
+                <a href="index.html">
+                    <p>Travelia</p>
+                </a>
             </section>
         </section>
         <section class="nav-container">
             <nav>
-                <a href="">Home</a>
-                <a href="">Our Package</a>
-                <a href="">Call Us</a>
+                <a href="index.html" class="active">Home</a>
+                <a href="#package">Our Package</a>
+                <a href="#call">Call Us</a>
             </nav>
         </section>
     </header>
@@ -57,7 +59,6 @@
             <br>
             <h3>Your happiness is our happiness</h3>
         </section>
-
         <section class="main-container">
             <div class="img-container">
                 <img src="assets/Foto/main-liburan1.jpg" alt="testimoni-liburan1" class="img-testimoni">
@@ -73,12 +74,10 @@
                     </div>
                 </div>
             </div>
-
-
             <aside class="main-aside-container">
-                <form action="" class="form-container">
+                <form action="" class="form-container" id="call">
                     <h1>CONTACT US</h1><br>
-                    <p>Sales akan menghubungi anda 1x24 ham setelah data kami terima.</p>
+                    <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p>
                     <div class="form-input-container">
                         <Label>Your Name:</Label><br>
                         <input type="text" name="name" id="name" class="input-label" required
@@ -105,14 +104,25 @@
                 </form>
             </aside>
         </section>
-
     </main>
-
-    <footer>
-
+    <footer class="footer-container">
+        <section class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/Foto/Logo.png" class="logo" alt="Logo-Perusahaan">
+                <div class="logo-text">
+                    <a href="index.html">
+                        <p>Travelia</p>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="#">Term of Service</a>
+                <span>|</span>
+                <a href="#">Privacy Policy</a>
+                <p>©Copyright 2024 - Travelia</p>
+            </div>
+        </section>
     </footer>
-
-
 
     <script src="js/script.js"></script>
 </body>
